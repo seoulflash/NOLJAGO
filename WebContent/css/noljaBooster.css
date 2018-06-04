@@ -1,0 +1,93 @@
+/* 전체영역 스타일 정의 */
+
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+* {
+  font-family: 'Nanum Gothic';
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* 네비게이션 영역 스타일 정의 */
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0px 2px 10px LightGray;
+}
+
+/* 네비게이션 제목 색상 */
+
+.navbar-default .navbar-brand {
+  color: springgreen;
+  font-weight: bolder;
+}
+
+/* 네비게이션 제목에 마우스 올렸을때 */
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  background-color: transparent;
+  color: #c9f7ae;
+}
+
+/* 네비게이션 메뉴 선택했을때 */
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: black;
+  background-color: #98FB98;
+}
+
+/* 네비게이션 텍스트에 마우스 올렸을때 */
+
+.navbar-default .navbar-nav>li:hover, .navbar-default .navbar-nav>li:focus {
+  /* font-weight: bold; */
+  background-color: #dbf9db;
+}
+
+/* 드랍다운이 열렸을때 마우스 색상 이벤트 */
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  color: black;
+  background-color: #98FB98;
+}
+
+/* 네비게이션 기본 색상 */
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+/* 해상도가 767픽셀보다 작을때 드랍다 아이템에 마우스를 올렸을 때 */
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu>li:hover, .navbar-default .navbar-nav .open .dropdown-menu>li:focus {
+    background-color: #ffffff;
+  }
+}
+
+/* 푸터 영역 */
+footer {
+	color: white;
+	box-shadow: 0px -2px 5px LightGray;
+}
+footer .navbar-default .navbar-nav>li>a {
+  color: white;
+}
+footer .container-fluid {
+  border-color: #354458;
+  background-color: #354458;
+}
+
+footer .navbar {
+  background-color: #354458;
+  border-color: #354458;
+  box-shadow: none;
+}
+
+/* 네비게이션 텍스트에 마우스 올렸을때 */
+
+footer .navbar-default .navbar-nav>li>a:hover, footer .navbar-default .navbar-nav>li>a:focus {
+	color: white;
+	background: #354458;
+}
